@@ -4,21 +4,21 @@
 class Taskurai < Formula
 	desc "Taskurai - provides an easy to setup scalable platform to run background tasks or jobs. Taskurai provides a convenient way to offload workload to asynchronic tasks, resulting in more scalable and responsive systems."
 	homepage "https://taskurai.com"
-	version "0.2.15"
+	version "0.2.16"
 	license "commercial"
 
 	on_macos do
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/0.2.15/taskurai_0.2.15_osx-x64.zip"
-		sha256 "25aa3193c06cc4f06d872c9ded9b32f899d0755081780d31a56aa1f120d72758"
+		url "https://get.taskurai.com/releases/0.2.16/taskurai_0.2.16_osx-x64.zip"
+		sha256 "4d1aaacce077d13228fd4fe7fb72ea8df57a1832c0465377b45c0caae99de66f"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.arm?
-		url "https://get.taskurai.com/releases/0.2.15/taskurai_0.2.15_osx-arm64.zip"
-		sha256 "5bcf14a7e7d965211cca52deefc2a35cb113b3edd3a6dd0a5b5fff7699dc256d"
+		url "https://get.taskurai.com/releases/0.2.16/taskurai_0.2.16_osx-arm64.zip"
+		sha256 "b9b4e71a5334c6cf0bd3a5240204df0b4bc9c2d57d86822d304a5d0b1f7c9530"
   
 		def install
 		  bin.install "taskurai"
@@ -28,16 +28,16 @@ class Taskurai < Formula
   
 	on_linux do
 	  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-		url "https://get.taskurai.com/releases/0.2.15/taskurai_0.2.15_linux-arm64.zip"
-		sha256 "fe0cd72ab4c70f18360f4fa60df5717c7a9b45f10c87594ef8c93ee1331ab37a"
+		url "https://get.taskurai.com/releases/0.2.16/taskurai_0.2.16_linux-arm64.zip"
+		sha256 "b9850b79f9ab991e4fb7047d5eeb3c31d79904ba11cdbf4cb0e3f3a9e67823ee"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/0.2.15/taskurai_0.2.15_linux-x64.zip"
-		sha256 "b284724012969f4facbd4d294e5bf90220dfa7259d7bce3f1536f8dd54fe35ab"
+		url "https://get.taskurai.com/releases/0.2.16/taskurai_0.2.16_linux-x64.zip"
+		sha256 "aa3f83c9dec810542e81caa92175d19ba31c1f930a105872b75c94b8b288065b"
   
 		def install
 		  bin.install "taskurai"
