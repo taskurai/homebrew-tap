@@ -14,21 +14,21 @@
 class Taskurai < Formula
 	desc "Taskurai - provides an easy to setup scalable platform to run background tasks or jobs. Taskurai provides a convenient way to offload workload to asynchronic tasks, resulting in more scalable and responsive systems."
 	homepage "https://taskurai.com"
-	version "1.4.4"
+	version "1.5.0"
 	license "commercial"
 
 	on_macos do
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/1.4.4/taskurai_1.4.4_osx-x64.zip"
-		sha256 "6d1b02a4962cf67f2cffaaf1cadc20cfe66d3f0151949c7a60d66469f2504eab"
+		url "https://get.taskurai.com/releases/1.5.0/taskurai_1.5.0_osx-x64.zip"
+		sha256 "12787197d50fea8c783923a86cab26f3ce3cda7caad39cf8004a18c56a583914"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.arm?
-		url "https://get.taskurai.com/releases/1.4.4/taskurai_1.4.4_osx-arm64.zip"
-		sha256 "71bdef1c57bc399694bf7e1018137a0937ed1f3f9320feba9ede1d8b4529624f"
+		url "https://get.taskurai.com/releases/1.5.0/taskurai_1.5.0_osx-arm64.zip"
+		sha256 "f3d9d6ca6a96ce31c3d05cbc21e957acb8714a47326d18be660b1ed852634222"
   
 		def install
 		  bin.install "taskurai"
@@ -38,16 +38,16 @@ class Taskurai < Formula
   
 	on_linux do
 	  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-		url "https://get.taskurai.com/releases/1.4.4/taskurai_1.4.4_linux-arm64.zip"
-		sha256 "c11b44c7a22992de9125a99a628518bdfb3db20baab08fde632da0199dc285f2"
+		url "https://get.taskurai.com/releases/1.5.0/taskurai_1.5.0_linux-arm64.zip"
+		sha256 "e4a1e15c9fffaedf0c9ff69ef2b21216d9b9b1e35a0a59369fcec7f0d7b84ebe"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/1.4.4/taskurai_1.4.4_linux-x64.zip"
-		sha256 "7023178cb478669114f42b8b5aebc771825a59225945d8847da625702f518001"
+		url "https://get.taskurai.com/releases/1.5.0/taskurai_1.5.0_linux-x64.zip"
+		sha256 "e0bdc43362485c026088a8e804d5fadae13fcabaed7c27755ce1c4c5b7f109d1"
   
 		def install
 		  bin.install "taskurai"
