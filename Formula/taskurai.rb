@@ -1,11 +1,7 @@
 =begin
- This is the default license template.
- 
  File: taskurai-template.rb
- Author: bartpappyn
- Copyright (c) 2024 bartpappyn
- 
- To edit this license information: Press Ctrl+Shift+P and press 'Create new License Template...'.
+ Author: Buildby BV
+ Copyright (c) Buildby BV. All rights reserved.
 =end
 
 # typed: false
@@ -14,21 +10,21 @@
 class Taskurai < Formula
 	desc "Taskurai - provides an easy to setup scalable platform to run background tasks or jobs. Taskurai provides a convenient way to offload workload to asynchronic tasks, resulting in more scalable and responsive systems."
 	homepage "https://taskurai.com"
-	version "1.12.0"
+	version "2.5.3"
 	license "commercial"
 
 	on_macos do
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/1.12.0/taskurai_1.12.0_osx-x64.zip"
-		sha256 "6de402aa88a909f26df1e6a143b901e3d11c3c8f53617568da2cade5ebb5f886"
+		url "https://get.taskurai.com/releases/2.5.3/taskurai_2.5.3_osx-x64.zip"
+		sha256 "a36590a58747039c3796c853e49524b01847f4317c81e46368397282cb9232f7"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.arm?
-		url "https://get.taskurai.com/releases/1.12.0/taskurai_1.12.0_osx-arm64.zip"
-		sha256 "a1f576255cc3df5cf0f718c3276446637c4b39fe748e53d44a96307e64cd32a5"
+		url "https://get.taskurai.com/releases/2.5.3/taskurai_2.5.3_osx-arm64.zip"
+		sha256 "b76395fcb1378f8253892263a238c250906c6e3afcabc02174d7f15ed2680f5a"
   
 		def install
 		  bin.install "taskurai"
@@ -38,16 +34,16 @@ class Taskurai < Formula
   
 	on_linux do
 	  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-		url "https://get.taskurai.com/releases/1.12.0/taskurai_1.12.0_linux-arm64.zip"
-		sha256 "ae45e3d3341221a6b21e7f6784bd4a6f7018215869cbebfc6c9ca3ff1e027b58"
+		url "https://get.taskurai.com/releases/2.5.3/taskurai_2.5.3_linux-arm64.zip"
+		sha256 "228146eed4f0b87196a795fc780d9b9c0bf9e961b40be0d03616cd186e394685"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/1.12.0/taskurai_1.12.0_linux-x64.zip"
-		sha256 "3e8677d9ca7513523b593c7ef21e802448ef91f05e37232133b28d473bc6f94d"
+		url "https://get.taskurai.com/releases/2.5.3/taskurai_2.5.3_linux-x64.zip"
+		sha256 "e800add9cd7f051979f208551dc6b6188f7d5e8389ed2e4d0fd5b5d69e749ebc"
   
 		def install
 		  bin.install "taskurai"
