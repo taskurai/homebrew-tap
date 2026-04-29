@@ -10,21 +10,21 @@
 class Taskurai < Formula
 	desc "Taskurai - provides an easy to setup scalable platform to run background tasks or jobs. Taskurai provides a convenient way to offload workload to asynchronic tasks, resulting in more scalable and responsive systems."
 	homepage "https://taskurai.com"
-	version "2.5.23"
+	version "2.5.24"
 	license "commercial"
 
 	on_macos do
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/2.5.23/taskurai_2.5.23_osx-x64.zip"
-		sha256 "03eff46b32b35cce02ea544a91206ecb3e78f942717afce5a7378234b8390bad"
+		url "https://get.taskurai.com/releases/2.5.24/taskurai_2.5.24_osx-x64.zip"
+		sha256 "66a49d306ddf8aea774d75528aa298577838890ec7e56d5ba15b8de0760e7467"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.arm?
-		url "https://get.taskurai.com/releases/2.5.23/taskurai_2.5.23_osx-arm64.zip"
-		sha256 "d5017b5435986c91cea1023a99912b5edecf63bd01875bc7c9bb5fe187127b6b"
+		url "https://get.taskurai.com/releases/2.5.24/taskurai_2.5.24_osx-arm64.zip"
+		sha256 "5497c8bb8f24693095f5958992acb52cee25eda95791a5219e0aef4b5eb8f7c5"
   
 		def install
 		  bin.install "taskurai"
@@ -34,16 +34,16 @@ class Taskurai < Formula
   
 	on_linux do
 	  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-		url "https://get.taskurai.com/releases/2.5.23/taskurai_2.5.23_linux-arm64.zip"
-		sha256 "0478f75219ec0df8110b68ac0a4c289e94dd9b8970ec2b2690f9fd6cb601adae"
+		url "https://get.taskurai.com/releases/2.5.24/taskurai_2.5.24_linux-arm64.zip"
+		sha256 "f64ca61d8eea3d30924dbcaf2954c14ff6010319e12f0351eaa28b3814ea5bfd"
   
 		def install
 		  bin.install "taskurai"
 		end
 	  end
 	  if Hardware::CPU.intel?
-		url "https://get.taskurai.com/releases/2.5.23/taskurai_2.5.23_linux-x64.zip"
-		sha256 "98d059be342f31736907d776a61ef6d1171413b176f85d2ef89b5d27f891e392"
+		url "https://get.taskurai.com/releases/2.5.24/taskurai_2.5.24_linux-x64.zip"
+		sha256 "3833c4bb766ea7b0304fa8ecfd7cf03e2e1dabae9c51765a890f69870f4164da"
   
 		def install
 		  bin.install "taskurai"
